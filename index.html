@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171411">
+  <title>NOIR — iPhone Style Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <main class="phone-shell">
+    <section class="calculator" aria-label="Calculator">
+      <header class="topbar">
+        <span class="brand">NOIR <i>CALCULATOR</i></span>
+        <button class="theme-btn" id="themeBtn" aria-label="Change theme" title="Change theme">☼</button>
+      </header>
+      <section class="screen" aria-live="polite">
+        <p class="expression" id="expression"></p>
+        <p class="result" id="result">0</p>
+      </section>
+      <section class="keypad" id="keypad" aria-label="Calculator keys">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="sign">+/−</button>
+        <button class="key utility" data-action="percent">%</button>
+        <button class="key operator" data-action="operator" data-value="/">÷</button>
+
+        <button class="key number" data-action="digit" data-value="7">7</button>
+        <button class="key number" data-action="digit" data-value="8">8</button>
+        <button class="key number" data-action="digit" data-value="9">9</button>
+        <button class="key operator" data-action="operator" data-value="*">×</button>
+
+        <button class="key number" data-action="digit" data-value="4">4</button>
+        <button class="key number" data-action="digit" data-value="5">5</button>
+        <button class="key number" data-action="digit" data-value="6">6</button>
+        <button class="key operator" data-action="operator" data-value="-">−</button>
+
+        <button class="key number" data-action="digit" data-value="1">1</button>
+        <button class="key number" data-action="digit" data-value="2">2</button>
+        <button class="key number" data-action="digit" data-value="3">3</button>
+        <button class="key operator" data-action="operator" data-value="+">+</button>
+
+        <button class="key number zero" data-action="digit" data-value="0">0</button>
+        <button class="key number" data-action="decimal">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </section>
+      <footer class="footer"><span>GLASS EDITION</span><span>DESIGNED FOR PRECISION</span></footer>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
